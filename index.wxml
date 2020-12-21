@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="all">
+<block wx:for="{{data}}" wx:key="item">
+<view class="box">
+<view class="left">
+<image src="{{item.image}}"></image>
+</view>
+<view class="right">
+<view class="title">{{item.title}}</view>
+<view class="content">{{item.content}}</view>
+<view class="bottom">
+  <text class="num">{{item.collection}}收藏数量</text>
+  <text class="state" bind:tap="shoucang" data-id="{{item.id}}" wx:if="{{item.collection > 0}}">已收藏</text>
+  <text class="state" bind:tap="shoucang" data-id="{{item.id}}" wx:else>收藏</text>
+</view>
+</view>
+</view>
+</block>
+</view>

@@ -1,0 +1,39 @@
+/**index.wxss**/
+.box{
+  widows: 700rpx;
+  height: 300rpx;
+  /* background: red; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.left{
+  width: 280rpx;
+  height: 270rpx;
+  /* background: greenyellow; */
+}
+.right{
+  width: 470rpx;
+  height: 250rpx;
+  /* background: burlywood; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title{
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+.content{
+  font-size: 25rpx;
+  color: #aaaaaa;
+}
+.num,.state{
+  font-size: 30rpx;
+  margin: 0rpx 15rpx;
+}
+image{
+  width: 260rpx;
+  height: 240rpx;
+  margin: 10rpx 0rpx 0rpx 10rpx;
+}
